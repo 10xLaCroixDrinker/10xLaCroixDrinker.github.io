@@ -47,7 +47,7 @@ table {
 -----------------------------------------------------------------*/
 
 body {
-  background: url(../img/me.png) no-repeat center top,
+  background: url(../img/me.png) no-repeat 400px 120px,
     url(../img/xv.png);
   color: rgb(81, 80, 80);
   margin: 0 auto;
