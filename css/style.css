@@ -1,14 +1,4 @@
-/* Contents:
-	1. Grid
-	2. Global Elements
-	3. Header
-	4. Sidebar
-	5. Main Content
-	6. Footer
-*/
-
-
-/*   0. Reset
+/*   Reset
 -----------------------------------------------------------------*/
 
 html, body, div, span, applet, object, iframe,
@@ -53,15 +43,15 @@ table {
 	border-spacing: 0;
 }
 
-/*   0. Global
+/*   Styles
 -----------------------------------------------------------------*/
 
 body {
   background: url(../img/me.png) no-repeat center top,
     url(../img/xv.png);
   color: rgb(81, 80, 80);
-  width: 940px;
   margin: 0 auto;
+  max-width: 940px;
 }
 
 h1 {
@@ -75,18 +65,48 @@ a {
 }
 
 ul {
-  list-style: none;
   font-size: 30px;
-  text-align: right;
+  list-style: none;
   line-height: 3em;
-  margin-right: 540px;
+  margin-right: 57.447%;
+  text-align: right;
 }
 
-svg {
-  margin-bottom: -20px;
-  margin-left: 15px;
+svg { margin: 0 0 -20px 15px; }
+
+/*   Media Queries
+-----------------------------------------------------------------*/
+
+@media only screen and (max-width: 939px) {
+	svg {
+  	margin-left: 8px;
+  	width: 40px;
+  }
+	ul {
+  	font-size: 24px;
+  	line-height: 2em;
+	  margin-right: 57%;
+	}
+	h1 { text-align: center; }
 }
 
+@media only screen and (max-width: 708px) {
+  ul { margin-right: 50%; }
+}
+
+@media only screen and (max-width: 605px) {
+  ul { margin-right: 20%; }
+  body { background: url(../img/head.png) no-repeat center 520px, url(../img/xv.png); }
+	h1 {
+  	font-size: 60px;
+  	margin: 0.75em 0 0.25em 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	ul { margin-right: 10%; }
+
+}
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
