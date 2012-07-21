@@ -100,7 +100,6 @@ ul {
   vertical-align: -0.3em;
 }
 
-
 .meltmedia {color: #96C0E6;}
 .github {color: #000;}
 .dribbble {color: #EA4C89;}
@@ -136,5 +135,4 @@ ul {
 
 @media only screen and (max-width: 480px) {
 	ul { margin-right: 10%; }
-
 }
