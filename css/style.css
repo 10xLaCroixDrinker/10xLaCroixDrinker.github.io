@@ -46,6 +46,17 @@ table {
 /*   Styles
 -----------------------------------------------------------------*/
 
+@font-face {
+	font-family: 'Jimmycons';
+	src: url('../fonts/Jimmycons.eot');
+	src: url('../fonts/Jimmycons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Jimmycons.svg#Jimmycons') format('svg'),
+		url('../fonts/Jimmycons.woff') format('woff'),
+		url('../fonts/Jimmycons.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
   background: url(../img/me.png) no-repeat 400px 120px,
     url(../img/xv.png);
@@ -72,15 +83,34 @@ ul {
   text-align: right;
 }
 
-svg { margin: 0 0 -20px 15px; }
+.icon {
+  font-family: "Jimmycons";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+  font-size: 60px;
+  vertical-align: -0.3em;
+}
+
+.meltmedia {color: #96C0E6;}
+.github {color: #000;}
+.dribbble {color: #EA4C89;}
+.twitter {color: #2EABE1;}
 
 /*   Media Queries
 -----------------------------------------------------------------*/
 
 @media only screen and (max-width: 939px) {
-	svg {
-  	margin-left: 8px;
-  	width: 40px;
+	.icon {
+  	font-size: 40px;
   }
 	ul {
   	font-size: 24px;
@@ -105,5 +135,4 @@ svg { margin: 0 0 -20px 15px; }
 
 @media only screen and (max-width: 480px) {
 	ul { margin-right: 10%; }
-
 }
