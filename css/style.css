@@ -13,22 +13,35 @@
 }
 
 body {
-  background: url(../img/me.png) no-repeat 400px 120px,
-   						url(../img/xv.png);
+  background: url(../img/xv.png);
   color: rgb(81, 80, 80);
   font-size: 30px;
   margin: 0 auto;
-  max-width: 940px;
+  width: 940px;
 }
 
 h1 {
   font-size: 2.4em;
   margin: 1em 0;
+  z-index: 1;
+}
+
+.me {
+    background: url(../img/me.png) no-repeat;
+    float: right;
+    height: 1025px;
+    margin: -600px -360px 0 0;
+    width: 1095px;
+    z-index: -1;
+}
+
+section.main {
+  z-index: 1;
 }
 
 ul {
   list-style: none;
-  margin-right: 57.447%;
+  margin-right: 540px;
   padding: 0;
   text-align: right;
 }
@@ -63,35 +76,3 @@ a {
 .github .icon, a.github:hover {color: rgb(0, 0, 0);}
 .dribbble .icon, a.dribbble:hover {color: rgb(234, 76, 137);}
 .twitter .icon, a.twitter:hover {color: rgb(46, 171, 225);}
-
-
-/*   Media Queries
------------------------------------------------------------------*/
-
-@media only screen and (max-width: 939px) {
-	h1 {text-align: center;}
-	.icon {font-size: 1.5em;}
-	
-	ul {
-  	font-size: 0.8em;
-  	line-height: 2em;
-	  margin-right: 57%;
-	}
-}
-
-@media only screen and (max-width: 708px) {
-  ul { margin-right: 50%; }
-}
-
-@media only screen and (max-width: 605px) {
-  body {background: url(../img/head.png) no-repeat center 520px, url(../img/xv.png);}
-  ul {margin-right: 20%;}
-	h1 {
-  	font-size: 60px;
-  	margin: 0.75em 0 0.25em 0;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	ul {margin-right: 10%;}
-}
