@@ -48,25 +48,26 @@ table {
 
 @font-face {
 	font-family: 'Jimmycons';
+	font-style: normal;
+	font-weight: normal;
 	src: url('../fonts/Jimmycons.eot');
 	src: url('../fonts/Jimmycons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Jimmycons.svg#Jimmycons') format('svg'),
-		url('../fonts/Jimmycons.woff') format('woff'),
-		url('../fonts/Jimmycons.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+ 			 url('../fonts/Jimmycons.svg#Jimmycons') format('svg'),
+			 url('../fonts/Jimmycons.woff') format('woff'),
+			 url('../fonts/Jimmycons.ttf') format('truetype');
 }
 
 body {
   background: url(../img/me.png) no-repeat 400px 120px,
-    url(../img/xv.png);
+   						url(../img/xv.png);
   color: rgb(81, 80, 80);
+  font-size: 30px;
   margin: 0 auto;
   max-width: 940px;
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 2.4em;
   margin: 1em 0;
 }
 
@@ -76,48 +77,46 @@ a {
 }
 
 ul {
-  font-size: 30px;
-  list-style: none;
   line-height: 3em;
+  list-style: none;
   margin-right: 57.447%;
   text-align: right;
 }
 
 .icon {
   font-family: "Jimmycons";
+  -webkit-font-feature-settings: "liga", "dlig";
+  	 -moz-font-feature-settings: "liga=1, dlig=1";
+  	 -moz-font-feature-settings: "liga", "dlig";
+  	  -ms-font-feature-settings: "liga", "dlig";
+  	   -o-font-feature-settings: "liga", "dlig";
+  	   		font-feature-settings: "liga", "dlig";
+  font-size: 2em;
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
   text-rendering: optimizeLegibility;
-  white-space: nowrap;
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -moz-font-feature-settings: "liga", "dlig";
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig";
-  font-size: 60px;
   vertical-align: -0.3em;
 }
 
-.meltmedia {color: #96C0E6;}
-.github {color: #000;}
-.dribbble {color: #EA4C89;}
-.twitter {color: #2EABE1;}
+.meltmedia .icon, a.meltmedia:hover {color: rgb(150, 192, 230);}
+.github .icon, a.github:hover {color: rgb(0, 0, 0);}
+.dribbble .icon, a.dribbble:hover {color: rgb(234, 76, 137);}
+.twitter .icon, a.twitter:hover {color: rgb(46, 171, 225);}
+
 
 /*   Media Queries
 -----------------------------------------------------------------*/
 
 @media only screen and (max-width: 939px) {
-	.icon {
-  	font-size: 40px;
-  }
+	.icon {font-size: 1.5em;}
+	h1 {text-align: center;}
+	
 	ul {
-  	font-size: 24px;
+  	font-size: 0.8em;
   	line-height: 2em;
 	  margin-right: 57%;
 	}
-	h1 { text-align: center; }
 }
 
 @media only screen and (max-width: 708px) {
@@ -125,8 +124,8 @@ ul {
 }
 
 @media only screen and (max-width: 605px) {
-  ul { margin-right: 20%; }
-  body { background: url(../img/head.png) no-repeat center 520px, url(../img/xv.png); }
+  ul {margin-right: 20%;}
+  body {background: url(../img/head.png) no-repeat center 520px, url(../img/xv.png);}
 	h1 {
   	font-size: 60px;
   	margin: 0.75em 0 0.25em 0;
@@ -134,5 +133,5 @@ ul {
 }
 
 @media only screen and (max-width: 480px) {
-	ul { margin-right: 10%; }
+	ul {margin-right: 10%;}
 }
