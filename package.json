@@ -1,0 +1,31 @@
+{
+  "name": "jimmyking.me",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hi, I'm Jimmy King",
+  "homepage": "http://jimmyking.me",
+  "author": "Jimmy King <hello@jimmyking.me> (http://jimmyking.me)",
+  "maintainers": [
+    "Jimmy King <hello@jimmyking.me> (https://github.com/jking90)"
+  ],
+  "contributors": [
+    "Jimmy King <hello@jimmyking.me> (https://github.com/jking90)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jking90/jking90.github.com.git"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.2.x",
+    "docpad": "6.21.x"
+  },
+  "dependencies": {
+    "docpad": "6.21.x",
+    "docpad-plugin-coffeekup": "2.x",
+    "docpad-plugin-coffeescript": "~2.2.0",
+    "docpad-plugin-eco": "2.x",
+    "docpad-plugin-marked": "2.x"
+  },
+  "main": "node_modules/docpad/bin/docpad-server"
+}
