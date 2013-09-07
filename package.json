@@ -16,12 +16,12 @@
     "url": "https://github.com/jking90/jking90.github.com.git"
   },
   "engines": {
-    "node": "0.8.x",
+    "node": "0.10.x",
     "npm": "1.2.x",
-    "docpad": "6.21.x"
+    "docpad": "6.x"
   },
   "dependencies": {
-    "docpad": "6.21.x",
+    "docpad": "6.x",
     "docpad-plugin-coffeekup": "2.x",
     "docpad-plugin-coffeescript": "~2.2.0",
     "docpad-plugin-eco": "2.x",
