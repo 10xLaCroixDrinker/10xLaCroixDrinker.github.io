@@ -21,11 +21,12 @@
     "docpad": "6.x"
   },
   "dependencies": {
-    "docpad": "6.x",
-    "docpad-plugin-coffeekup": "2.x",
-    "docpad-plugin-coffeescript": "~2.2.0",
-    "docpad-plugin-eco": "2.x",
-    "docpad-plugin-marked": "2.x"
+    "docpad": "~6.52.1",
+    "docpad-plugin-coffeekup": "~2.2.0",
+    "docpad-plugin-coffeescript": "~2.2.2",
+    "docpad-plugin-eco": "~2.0.2",
+    "docpad-plugin-marked": "~2.1.1"
   },
-  "main": "node_modules/docpad/bin/docpad-server"
+  "main": "node_modules/docpad/bin/docpad-server",
+  "devDependencies": {}
 }
