@@ -26,7 +26,7 @@ docpadConfig = {
     # Specify some site properties
     site:
       # The production url of our website
-      url: "http://iskendraontheradio.com"
+      url: "http://jimmyking.me"
 
     # -----------------------------
     # Helper Functions
