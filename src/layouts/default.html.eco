@@ -12,17 +12,6 @@
     <% end %>
   </head>
   <body>
-<!--
-    <nav>
-      <ul>
-        <li><a href="#intro">Introduction</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#help">Help</a></li>
-        <li><a href="https://github.com/jking90/get-tweet/archive/master.zip">Download</a></li>
-        <li><a href="https://github.com/jking90/get-tweet">View on github</a></li>
-      </ul>
-    </nav>
--->
 
     <%- @partial 'nav.html.coffee', @ %>
 
