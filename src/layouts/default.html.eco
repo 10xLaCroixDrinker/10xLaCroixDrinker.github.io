@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><%- @document.title %></title>
+    <meta name="description" content="<%- @document.description %>">
+    <meta name="viewport" content="width=device-width">
+    <% for style in @document.css : %>
+      <link rel="stylesheet" href="<%= style %>">
+    <% end %>
+  </head>
+  <body>
+<!--
+    <nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#help">Help</a></li>
+        <li><a href="https://github.com/jking90/get-tweet/archive/master.zip">Download</a></li>
+        <li><a href="https://github.com/jking90/get-tweet">View on github</a></li>
+      </ul>
+    </nav>
+-->
+
+    <%- @partial 'nav.html.coffee', @ %>
+
+    <%- @content %>
+    
+    <% for script in @document.js: %>
+      <script src="<%= script %>"></script>
+    <% end %>
+    
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '51c3d527108d7b6b320002c5');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+  </body>
+</html>
