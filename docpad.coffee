@@ -4,6 +4,12 @@ docpadConfig = {
   prompts: false
   checkVersion: false
 
+  # Sets default layout
+  collections:
+    pages: ->
+      @getCollection("html").on "add", (model) ->
+        model.setMetaDefaults({layout:"default"})
+
   events: 
 
     generateAfter: (opts,next) ->
@@ -55,10 +61,6 @@ docpadConfig = {
           renderUnderscoreStylesheets: true
           debugInfo: 'normal'
 
-    handlebars:
-      helpers:
-        projectUrl: ()->
-          '/' + @site.url.split('/')[3]
 }
 
 # Export our DocPad Configuration

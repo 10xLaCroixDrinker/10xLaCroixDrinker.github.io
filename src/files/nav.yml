@@ -1,8 +1,8 @@
 ---
   Home:
-    url: "/"
+    url: '/'
   Blog:
-    url: "/blog"
+    url: '/blog'
   Projects: 
     url: "#"
     children: 
@@ -22,6 +22,8 @@
         url: "/GetTweet"
       gifs:
         url: "/gifs"
+      grunt-dependency-installer:
+        url: "https://github.com/jking90/grunt-dependency-installer"
       grunt-node-version:
         url: "https://github.com/jking90/grunt-node-version"
 #      SCSS Mixins: 
