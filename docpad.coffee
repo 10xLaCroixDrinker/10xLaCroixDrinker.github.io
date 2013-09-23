@@ -9,6 +9,9 @@ docpadConfig = {
     pages: ->
       @getCollection("html").on "add", (model) ->
         model.setMetaDefaults({layout:"default"})
+    posts: ->
+      @getCollection("html").findAllLive({relativeOutDirPath: 'blog'},[{date:-1}]).on "add", (model) ->
+        model.setMetaDefaults({layout:"post"})
 
   events: 
 
