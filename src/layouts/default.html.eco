@@ -1,3 +1,4 @@
+p
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,6 +15,12 @@
     <% if @document.css : %>
     <% for style in @document.css : %>
       <link rel="stylesheet" href="<%= style %>">
+    <% end %>
+    <% end %>
+
+    <% if @document.less : %>
+    <% for style in @document.less : %>
+      <link rel="stylesheet/less" href="<%= style %>">
     <% end %>
     <% end %>
 

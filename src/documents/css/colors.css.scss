@@ -1,0 +1,262 @@
+/*
+@import 'reset';
+@import 'font-face';
+@import 'variables';
+@import 'mixins';
+@import 'type';
+@import 'code';
+@import 'nav';
+@import 'colorpicker';
+@import 'spec';
+*/
+
+.highlighted {
+  margin: 20px 0;
+}
+
+code {
+  background: #E3E1D0;
+  border-radius: 2px;
+  color: #839496;
+  display: inline;
+  font-family: 'DejaVuSansMono', 'Source Code Pro', monospace;
+  margin-top: 1px;
+  padding: 0 4px 0;
+
+  pre & {
+    background: #002b36;
+    border-radius: 2px;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+}
+
+pre .comment {
+  word-break: break-word;
+}
+
+
+// Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+pre {
+  .comment,
+  .template_comment,
+  .diff .header,
+  .doctype,
+  .pi,
+  .lisp .string,
+  .javadoc {
+    color: #586e75;
+    font-style: italic;
+  }
+
+  .keyword,
+  .winutils,
+  .method,
+  .addition,
+  .css .tag,
+  .request,
+  .status,
+  .nginx .title {
+    color: #859900;
+  }
+
+  .number,
+  .command,
+  .string,
+  .tag .value,
+  .phpdoc,
+  .tex .formula,
+  .regexp,
+  .hexcolor {
+    color: #2aa198;
+  }
+
+  .title,
+  .localvars,
+  .chunk,
+  .decorator,
+  .built_in,
+  .identifier,
+  .vhdl .literal,
+  .id {
+    color: #268bd2;
+  }
+
+  .attribute,
+  .variable,
+  .lisp .body,
+  .smalltalk .number,
+  .constant,
+  .class .title,
+  .parent,
+  .haskell .type {
+    color: #b58900;
+  }
+
+  .preprocessor,
+  .preprocessor .keyword,
+  .shebang,
+  .symbol,
+  .symbol .string,
+  .diff .change,
+  .special,
+  .attr_selector,
+  .important,
+  .subst,
+  .cdata,
+  .clojure .title {
+    color: #cb4b16;
+  }
+
+  .deletion {
+    color: #dc322f;
+  }
+
+  pre .tex .formula {
+    background: #073642;
+  }
+}
+
+
+#ColorPicker {
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 6px;
+  background: #0d0d0d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#333), color-stop(0.1, #111), to(#000000));
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.35);
+  text-shadow: 1px 1px 1px #000;
+  color:#AAA;
+  cursor:default;
+  display:block;
+  font-family:'arial',helvetica,sans-serif;
+  font-size:20px;
+  padding:7px 8px 20px;
+  position:absolute;
+  width:229px;
+  z-index:100;
+
+  br {
+    clear:both;
+    margin:0;
+    padding:0;
+  }
+  input.hexInput:hover,
+  input.hexInput:focus {
+    color: #FFD000
+  }
+  input.hexInput {
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .5s;
+    background: none;
+    border: 0;
+    margin: 0;
+    font-family:courier,monospace;
+    font-size:20px;
+    position: relative;
+    top: -2px;
+    float:left;
+    color:#fff;
+    cursor: text;
+  }
+  #ColorPicker div.hexBox {
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 2px;
+    background:#FFF;
+    float:left;
+    font-size:1px;
+    height:20px;
+    margin: 0 5px 0 2px;
+    width:20px;
+    cursor: pointer;
+  }
+  div.hexBox div {
+    width: inherit;
+    height: inherit;
+  }
+  div.hexClose {
+    -webkit-transition-property: color, text-shadow;
+    -webkit-transition-duration: .5s;
+    position: relative;
+    top: -1px;
+    left: -1px;
+    color:#FFF;
+    cursor:pointer;
+    float:right;
+    padding: 0 5px;
+    margin:0 4px 3px;
+    user-select:none;
+    -webkit-user-select: none;
+  }
+  div.hexClose:hover {
+    text-shadow: 0 0 20px #fff;
+    color:#FF1100;
+  }
+}
+
+section {
+  margin-bottom: 100px;
+  &#demo {
+    height: 400px;
+    h2 {margin-bottom: 260px;}
+  }
+}
+
+#ColorPicker {
+  left: 50%;
+  margin-left: -140px;
+  top: 335px;
+
+  &, & * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+}
+
+figure {
+  float: left;
+  margin: 0 1.6% 40px;
+  width: 30%;
+  figcaption {display: inline-block;}
+  form, input {display: inline;}
+  &.no-params figcaption {margin-bottom: 6px;}
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  &.block {
+    background-color: #393939;
+    border-radius: 8px;
+    color: #EBE7E3;
+    display: block;
+    padding: 10px 24px;
+    white-space: pre-wrap;
+    .var {color: #D9DBF2;}
+    .value {color: #80AAC6;}
+    .comment {
+      color: #797979;
+      font-style: italic;
+    }
+    .fn {color: #DC5F32;}
+  }
+}
+
+.scheme {
+  border-radius: 6px;
+  height: 100px;
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  .color {
+    float: left;
+    height: 100px;
+  }
+  &.two .color {width: 50%;}
+  &.three .color {width: 33.333%;}
+  &.four .color {width: 25%;}
+  &.five .color {width: 20%;}
+  &.six .color {width: 16.667%;}
+}
