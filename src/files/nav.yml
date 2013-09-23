@@ -9,7 +9,7 @@
 #      ClassySlider: 
 #        url: "/ClassySlider"
       colors.less: 
-        url: "/colors.less"
+        url: "/colors"
       CSS Zen Garden:
         url: "http://www.csszengarden.com/?cssfile=/215/215.css"
       docpad-plugin-coffeelint: 
@@ -20,8 +20,6 @@
         url: "https://github.com/jking90/docpad-plugin-nodesass"
       GetTweet: 
         url: "/GetTweet"
-      gifs:
-        url: "/gifs"
       grunt-dependency-installer:
         url: "https://github.com/jking90/grunt-dependency-installer"
       grunt-node-version:
