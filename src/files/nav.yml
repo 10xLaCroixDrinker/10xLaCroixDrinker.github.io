@@ -9,7 +9,7 @@
 #      ClassySlider: 
 #        url: "/ClassySlider"
       colors.less: 
-        url: "/colors"
+        url: "/colors.less"
       CSS Zen Garden:
         url: "http://www.csszengarden.com/?cssfile=/215/215.css"
       docpad-plugin-coffeelint: 
