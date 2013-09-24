@@ -22,5 +22,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-node-version');
 
   grunt.registerTask('run', ['node_version','exec:run']);
+  grunt.registerTask('gen', ['node_version','exec:generate']);
   grunt.registerTask('deploy', ['node_version', 'exec:deploy']);
 };
