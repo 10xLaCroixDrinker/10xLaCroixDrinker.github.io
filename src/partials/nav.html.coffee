@@ -24,3 +24,8 @@ nav ->
                       li ->
                         a href:gItem.url, ->
                           text gKey
+    if @document.project
+      li '.download', ->
+        a href:'https://github.com/jking90/' + @document.project + '/archive/master.zip', 'Download'
+      li '.view-on-github', ->
+        a href:'https://github.com/jking90/' + @document.project, 'View on GitHub'

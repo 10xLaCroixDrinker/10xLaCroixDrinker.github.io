@@ -1,6 +1,9 @@
 ---
 title: CSS Zen Garden
+pub_date: July 18, 2013
 layout: post
+original: meltmedia blog
+original_link: 'http://blog.meltmedia.com/2013/07/css-zen-garden'
 ---
 
 Ten years ago, [Dave Shea](http://www.mezzoblue.com/about/dave/) [announced](http://mezzoblue.com/archives/2003/05/07/css_zen_gard/) the [CSS Zen Garden](http://www.csszengarden.com/). His original goal was “[…]to create a page that allows for some wildly different CSS designs, while coding valid XHTML 1.1, valid CSS, and conforming to Section 508 and AAA accessibility guidelines.” It is a single page of HTML that you can apply any of 213 CSS stylesheets to.

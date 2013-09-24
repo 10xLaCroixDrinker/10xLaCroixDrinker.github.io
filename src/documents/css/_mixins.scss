@@ -1,0 +1,13 @@
+@mixin roundRect($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius:    $radius;
+  -ms-border-radius:     $radius;
+  -o-border-radius:      $radius;
+  border-radius:         $radius;
+}
+
+@mixin calc($formula, $attr:width) {
+  #{$attr}: -webkit-calc(unquote('#{$formula}'));
+  #{$attr}:    -moz-calc(unquote('#{$formula}'));
+  #{$attr}:         calc(unquote('#{$formula}'));
+}
