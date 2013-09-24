@@ -34,7 +34,9 @@
     "docpad-plugin-highlightjs": "~2.1.7",
     "docpad-plugin-yamljs": "~2.0.0",
     "docpad-plugin-handlebars": "~2.2.2",
-    "docpad-plugin-nodesass": "~2.1.0"
+    "docpad-plugin-nodesass": "~2.1.0",
+    "docpad-plugin-partials": "~2.8.0",
+    "docpad-plugin-cleanurls": "~2.5.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "devDependencies": {}
