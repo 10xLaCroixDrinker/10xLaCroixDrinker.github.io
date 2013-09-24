@@ -21,14 +21,22 @@
     "docpad": "6.x"
   },
   "dependencies": {
-    "docpad": "~6.52.1",
+    "docpad": "~6.52.2",
     "docpad-plugin-coffeekup": "~2.2.0",
     "docpad-plugin-coffeescript": "~2.2.2",
     "docpad-plugin-eco": "~2.0.2",
     "docpad-plugin-marked": "~2.1.1",
     "grunt": "~0.4.1",
     "grunt-exec": "~0.4.2",
-    "grunt-node-version": "~1.0.0"
+    "grunt-node-version": "~1.0.0",
+    "js-yaml": "~2.1.0",
+    "docpad-plugin-ghpages": "~2.4.0",
+    "docpad-plugin-highlightjs": "~2.1.7",
+    "docpad-plugin-yamljs": "~2.0.0",
+    "docpad-plugin-handlebars": "~2.2.2",
+    "docpad-plugin-nodesass": "~2.1.0",
+    "docpad-plugin-partials": "~2.8.0",
+    "docpad-plugin-cleanurls": "~2.5.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "devDependencies": {}
