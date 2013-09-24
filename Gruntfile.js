@@ -4,6 +4,10 @@ module.exports = function(grunt) {
   	pkg: grunt.file.readJSON('package.json'),
 
     exec: {
+      generate: {
+        cmd: './node_modules/.bin/docpad generate --env=production'
+      },
+
       run: {
         cmd: './node_modules/.bin/docpad run'
       },
