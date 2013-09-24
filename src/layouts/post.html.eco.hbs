@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<h1>{{document.title}}</h1>
+
+{{#if document.original}}
+  <h4 class="original-post">This blog post originally appear on the <a href="{{document.original_link}}" target="_blank">{{document.original}}</a>.</h4>
+{{/if}}
+
+<%- @content %>
