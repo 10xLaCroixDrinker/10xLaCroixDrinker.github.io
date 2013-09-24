@@ -4,6 +4,10 @@ module.exports = function(grunt) {
   	pkg: grunt.file.readJSON('package.json'),
 
     exec: {
+      delete_out: {
+        cmd: 'rm -r ./out'
+      },
+
       generate: {
         cmd: './node_modules/.bin/docpad generate --env=production'
       },
@@ -22,6 +26,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-node-version');
 
   grunt.registerTask('run', ['node_version','exec:run']);
-  grunt.registerTask('gen', ['node_version','exec:generate']);
+  grunt.registerTask('gen', ['exec:delete_out','node_version','exec:generate']);
   grunt.registerTask('deploy', ['node_version', 'exec:deploy']);
 };
