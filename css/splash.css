@@ -1,0 +1,115 @@
+/*   Styles
+-----------------------------------------------------------------*/
+@font-face {
+  font-family: 'Jimmycons';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/Jimmycons.eot');
+  src: url('/fonts/Jimmycons.eot?#iefix') format('embedded-opentype'), url('/fonts/Jimmycons.svg#Jimmycons') format('svg'), url('/fonts/Jimmycons.woff') format('woff'), url('/fonts/Jimmycons.ttf') format('truetype'); }
+
+body {
+  background: url(../img/xv.png);
+  max-width: 100vw;
+  position: relative;
+  overflow-x: hidden; }
+  @media screen and (min-height: 1115px) {
+    body {
+      height: 100vh; } }
+
+.splash {
+  color: #515050;
+  font-size: 30px;
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%; }
+  .splash h1 {
+    font-size: 2.4em;
+    margin: 1em 0;
+    z-index: 1; }
+  .splash .me {
+    background: url(../img/me.png) 0 0 no-repeat;
+    height: 100vh;
+    height: -webkit-calc(100vh - 90px);
+    height: -moz-calc(100vh - 90px);
+    height: calc(unquote('#{$formula}'));
+    max-height: 1025px;
+    min-height: 650px;
+    margin-left: 265px;
+    position: absolute;
+    width: 1095px;
+    top: 90px;
+    z-index: -1; }
+    @media screen and (min-height: 1115px) {
+      .splash .me {
+        bottom: 0;
+        top: auto; } }
+  .splash section.main {
+    z-index: 1; }
+  .splash ul {
+    list-style: none;
+    margin-right: 470px;
+    padding: 0;
+    text-align: right; }
+  .splash li {
+    padding: 1em 0; }
+  .splash a {
+    color: #515050;
+    padding: 0.5em 0;
+    text-decoration: none; }
+  .splash .icon {
+    font-family: "Jimmycons";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -moz-font-feature-settings: "liga", "dlig";
+    -ms-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
+    font-size: 2em;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 4px;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    vertical-align: -0.3em; }
+  .splash .meltmedia .icon, .splash a.meltmedia:hover {
+    color: #96c0e6; }
+  .splash .github .icon, .splash a.github:hover {
+    color: black; }
+  .splash .dribbble .icon, .splash a.dribbble:hover {
+    color: #ea4c89; }
+  .splash .twitter .icon, .splash a.twitter:hover {
+    color: #2eabe1; }
+  .ie9 .splash .icon, .ie8 .splash .icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 61px;
+    position: relative;
+    top: -20px;
+    width: 61px; }
+  .ie9 .splash .meltmedia .icon, .ie8 .splash .meltmedia .icon {
+    background-image: url('/img/meltmedia.png'); }
+  .ie9 .splash .github .icon, .ie8 .splash .github .icon {
+    background-image: url('/img/github.png'); }
+  .ie9 .splash .dribbble .icon, .ie8 .splash .dribbble .icon {
+    background-image: url('/img/dribbble.png'); }
+  .ie9 .splash .twitter .icon, .ie8 .splash .twitter .icon {
+    background-image: url('/img/twitter.png'); }
+  .ie9 .splash .email .icon, .ie8 .splash .email .icon {
+    background-image: url('/img/email.png'); }
+  .ie9 .splash li, .ie8 .splash li {
+    padding-top: 0; }
+  @media (max-width: 1024px) {
+    .splash .me {
+      display: none; }
+    .splash h1 {
+      text-align: center; }
+    .splash ul {
+      margin: 0;
+      text-align: center; } }
+  @media (max-width: 760px) {
+    .splash h1 {
+      line-height: 1.2em;
+      margin: 0; } }
+  @media (max-width: 460px) {
+    .splash {
+      font-size: 20px; } }

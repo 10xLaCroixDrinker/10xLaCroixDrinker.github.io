@@ -1,0 +1,28 @@
+---
+  Home:
+    url: '/'
+  Projects: 
+    url: "#"
+    children: 
+      ClassySlider: 
+        url: "/ClassySlider"
+      ClassyStates:
+        url: "/ClassyStates"
+      colors.less: 
+        url: "/colors.less"
+      CSS Zen Garden:
+        url: "http://www.csszengarden.com/?cssfile=/215/215.css"
+      docpad-plugin-coffeelint: 
+        url: "https://github.com/jking90/docpad-plugin-coffeelint"
+      docpad-plugin-jshint: 
+        url: "https://github.com/jking90/docpad-plugin-jshint"
+      docpad-plugin-nodesass: 
+        url: "https://github.com/jking90/docpad-plugin-nodesass"
+      GetTweet: 
+        url: "/GetTweet"
+      grunt-dependency-installer:
+        url: "https://github.com/jking90/grunt-dependency-installer"
+      grunt-node-version:
+        url: "/grunt-node-version"
+#      SCSS Mixins: 
+#        url: "/scss-mixins"
